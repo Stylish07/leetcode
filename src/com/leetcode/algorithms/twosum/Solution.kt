@@ -21,7 +21,6 @@ class Solution {
 
         for ((i, num) in nums.withIndex()) {
             val complement = target - num
-            println("i:$i, num:$num, complement: $complement")
             if (map.containsKey(complement)) {
                 return intArrayOf(map[complement]!!, i)
             }
